@@ -45,18 +45,21 @@ And that’s it! Have a cup of cocoa and cozy up by the fire.
 
 First, thanks, we love you. Second, try these flags:
 
-- [`--unstable-byonm`](/blog/v1.38#nodejs-compatibility-improvements): The
-  "bring your own node_modules" feature, supported as of [1.38](/blog/v1.38),
-  allows you to use Deno with the npm package manager of your choice.
-- [`--unstable-sloppy-imports`](/blog/v1.39#sloppy-imports): supported as of
-  [1.39](/blog/v1.39), which loosens the requirements for how Deno imports
-  modules (e.g. import statements don’t need file extensions, assumes
-  `index.js`, etc). Note this is not recommended for general use.
+- [`--unstable-byonm`](https://deno.com/blog/v1.38#nodejs-compatibility-improvements):
+  The "bring your own node_modules" feature, supported as of
+  [1.38](https://deno.com/blog/v1.38), allows you to use Deno with the npm
+  package manager of your choice.
+- [`--unstable-sloppy-imports`](https://deno.com/blog/v1.39#sloppy-imports):
+  supported as of [1.39](https://deno.com/blog/v1.39), which loosens the
+  requirements for how Deno imports modules (e.g. import statements don’t need
+  file extensions, assumes `index.js`, etc). Note this is not recommended for
+  general use.
   [For more details, check out the PR.](https://github.com/denoland/deno/pull/21464)
-- [`--unstable-unsafe-proto`](/blog/v1.39#support-for-objectprototype__proto__):
-  also suppored as of [1.39](/blog/v1.39), this flag enables support for
-  `Object.prototype.__proto__`, which many npm packages rely on to function
-  properly. Again, this is not recommended for general use for security reasons.
+- [`--unstable-unsafe-proto`](https://deno.com/blog/v1.39#support-for-objectprototype__proto__):
+  also suppored as of [1.39](https://deno.com/blog/v1.39), this flag enables
+  support for `Object.prototype.__proto__`, which many npm packages rely on to
+  function properly. Again, this is not recommended for general use for security
+  reasons.
 
 For additional resources on Node/npm interoperability with Deno, check out these
 resources:
