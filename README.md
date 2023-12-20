@@ -6,10 +6,11 @@
 
 ## What is this?
 
-Starting Thursday December 21st and running until January 4th, take any Node
-project, run it with Deno, screenshot and share results (success or failure) on
-[Twitter](https://twitter.com/deno_land) with the hashtag `#NodeToDenoChallenge`
-or as [an issue](https://github.com/denoland/nodetodenochallenge/issues), and
+Starting Thursday, December 21st, 2023 and running until Thursday, January 4th,
+2024, take any Node project, run it with Deno, screenshot and share results
+(success or failure) on [Twitter](https://twitter.com/deno_land) with the
+hashtag `#NodeToDenoChallenge` or as
+[an issue](https://github.com/denoland/nodetodenochallenge/issues), and
 [be eligible to win prizes](#prizes).
 
 ## How to participate?
