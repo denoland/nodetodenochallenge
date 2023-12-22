@@ -13,14 +13,43 @@ hashtag `#NodeToDenoChallenge` or as
 [an issue](https://github.com/denoland/nodetodenochallenge/issues), and
 [be eligible to win prizes](#prizes).
 
-## How to participate?
+## How to participate
 
 Yes, it’s holiday season and no one can be bothered to do anything, so we’re
 making participation as streamlined as possible:
 
 1. Take _any_ Node project. Doesn’t need to be an app or a server. Can be a
    script even.
-2. Run this command:
+2. If necessary, update import statements to
+   [ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#importing_features_into_your_script).
+   This means replacing
+
+```js
+const module = require("module");
+```
+
+with
+
+```js
+import module from "module";
+```
+
+3. Add the below `deno.json` file, which enables
+   [various unstable Node/npm compatibility settings](#what-are-all-these-unstable-node-compatibility-settings),
+   to the root of your project.
+
+```js
+{
+  "unstable": [
+    "bare-node-builtins",
+    "byonm",
+    "sloppy-imports",
+    "unsafe-proto"
+  ]
+}
+```
+
+4. Run this command:
 
 <figure>
 
@@ -34,17 +63,15 @@ deno run -A $FILE
 
 </figure>
 
-3. Take a screenshot of the output, regardless of success or failure.
-4. Share it on [Twitter](https://twitter.com/deno_land) or
+5. Take a screenshot of the output, regardless of success or failure.
+6. Share it on [Twitter](https://twitter.com/deno_land) or
    [create a GitHub issue](https://github.com/denoland/nodetodenochallenge/issues).
    (If you want to be eligible for the "largest Node project" category, then you
    must also include a link to the GitHub so we can verify lines of code.)
 
 And that’s it! Have a cup of cocoa and cozy up by the fire.
 
-## Got an error, but _really_ wanna make it work?
-
-First, thanks, we love you. Second, try these flags:
+## What are all these unstable Node compatibility settings?
 
 - [`--unstable-bare-node-builtins`](https://docs.deno.com/runtime/manual/tools/unstable_flags#--unstable-bare-node-builtins):
   supported as of [1.30](https://deno.com/blog/v1.30), this flag allows you to
